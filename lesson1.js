@@ -303,7 +303,6 @@
 // 	`${x}`, // интерполяция также переменная х превратится в строку
 // );
 
-
 //-------------------------------------------
 
 //Створи функцію countMs, яка приймає рядок text і повертає кількість літер m у ньому (як великих, так і маленьких разом).
@@ -322,7 +321,6 @@
 
 // countMs("countMs");
 
-
 //----------------------------------------------
 
 //Наш новий бос, як виявилося, просто ненавидить голосні літери, тому нам потрібно прибрати їх з усієї документації.
@@ -331,18 +329,59 @@
 
 // Голосними для цього завдання вважаються букви aeiouy в будь-якому регістрі.
 
-function removeVowels(doc) {
-  let result = '';
-for (let i = 0; i < doc.length; i++) {
-  if (doc[i] !== 'a'||doc[i] !== 'e'|| doc[i] !=='i' || doc[i] !=='o'|| doc[i] !=='u'|| doc[i] !=='y') {
-    result += doc[i];
+// function removeVowels(doc) {
+//   let result = '';
+//   for (const word of doc) {
+// 	if (!'aeiouy'.includes(word.toLowerCase())) {
+//   result += word;
+// }
+// }
+// return result;
+// }
+
+// function fakeBin(x) {
+//   let string = '';
+//   for (let i = 0; i < x.length; i++) {
+//     if (i < 5) {
+//       string += 0;
+//     }
+// 		 if (i >= 5) {
+//       string += 1;
+//     }
+//   }
+//   return string;
+// }
+
+// console.log(fakeBin('45385593107843568'));
+
+// function fakeBin1(x) {
+// 	let string = '';
+// 	for (const i of x) {
+// 		if (i < 5) {
+// 			string += 0;
+// 		}
+// 			if (i >= 5) {
+// 				string += 1;
+// 			}
+// 	}
+// 	return string;
+// }
+
+// console.log(fakeBin1('45385593107843568'))
+
+// Створи функцію makeAbbr, яка приймає рядок зі слів words і повертає абревіатуру з них у верхньому регістрі.
+
+// Рядок words містить одне або декілька слів, розділених одним пробілом.
+
+function makeAbbr(words) {
+  let abbreviation = words[0];
+
+  for (let i = 0; i < words.length; i++) {
+    if ((i = " ")) {
+      abbreviation += i[i + 1];
+    }
   }
-}
-console.log(result);
+  return abbreviation.toUpperCase();
 }
 
-removeVowels('doc')
-
-for (const iterator of object) {
-	
-}
+console.log(makeAbbr("national aeronautics space administration"));
