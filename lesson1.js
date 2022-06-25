@@ -5,7 +5,7 @@
 // if (rest >= candyPrice) {
 //   document.write("I have money");
 // } else {
-//   document.write("I havent money");
+//   document.write("I haven't money");
 // }
 
 // // -----numbers
@@ -17,7 +17,7 @@
 
 // console.log(square);
 
-// -----Boolen
+// -----Boolean
 
 // const myAge = 19;
 // const hasAccess = myAge !== 18;
@@ -69,24 +69,24 @@
 
 // function printRectangleInfo(a, b) {
 //   const perimeter = 2 * a + 2 * b;
-//   const sqare = a * b;
+//   const square = a * b;
 
 //   console.log("Rectangle", a, "x", b);
 //   console.log("perimeter is ", perimeter);
-//   console.log("Square is ", sqare);
+//   console.log("Square is ", square);
 //   console.log("----------------");
 // }
 
 // ------
 
-// function bildHouse(numberOfFloors, color) {
+// function buildHouse(numberOfFloors, color) {
 // 	const house = `${numberOfFloors} - floors house ${color} - color`;
 
 // 	return house;
 // }
 
-// const smallHouse = bildHouse(5, 'blue');
-// const bigHouse = bildHouse(25, 'green');
+// const smallHouse = buildHouse(5, 'blue');
+// const bigHouse = buildHouse(25, 'green');
 
 // console.log(smallHouse);
 // console.log(bigHouse);
@@ -237,8 +237,8 @@
 // 	console.log(word[i]);
 // }
 
-// for (const leter of word) { // переберет все символы, нельзя остановиться на какомто определенном
-// 	console.log(leter);
+// for (const later of word) { // переберет все символы, нельзя остановиться на какомто определенном
+// 	console.log(later);
 // }
 
 //-------------------------------- Поиск подстроки в строке
@@ -246,14 +246,12 @@
 // const word = 'abcdebc';
 // const part = 'bc';
 
-// console.log(
-// 	word.includes(part), // содержит ли строка ворд в себе символы подстроки парт выдаст тру. Можно поставить второй параметр, индекс, с которого будет начинаться проверка
-// 	word.indexOf(part), // с какого индекса строки начинается совпадение подстроки выдаст 1 первое вхождение. Можно поставить второй параметр, индекс, с которого будет начинаться проверка
-// 	word.lastIndexOf(part), // с какого индекса строки начинается совпадение подстроки выдаст 5 последнее вхождение
-// 	word.startsWith(part), // проверяет начинается ли строка ворд с подстроки партс, вернет фолс
-// 	word.endsWith(part) // проверяет заканчивается ли строка ворд на подстроку партс, вернет тру
+// console.log(word.includes(part)); // содержит ли строка ворд в себе символы подстроки парт выдаст тру. Можно поставить второй параметр, индекс, с которого будет начинаться проверка
+// console.log(word.indexOf(part)); // с какого индекса строки начинается совпадение подстроки выдаст 1 первое вхождение. Можно поставить второй параметр, индекс, с которого будет начинаться проверка
+// console.log(word.lastIndexOf(part)); // с какого индекса строки начинается совпадение подстроки выдаст 5 последнее вхождение
+// console.log(word.startsWith(part)); // проверяет начинается ли строка ворд с подстроки партс, вернет фолс
+// console.log(word.endsWith(part)); // проверяет заканчивается ли строка ворд на подстроку партс, вернет тру
 
-// );
 
 //--------------------------------Смена регистра в тексте
 
@@ -373,15 +371,15 @@
 
 // Рядок words містить одне або декілька слів, розділених одним пробілом.
 
-function makeAbbr(words) {
-  let abbreviation = words[0];
+// function makeAbbr(words) {
+//   let abbreviation = words[0];
 
-  for (let i = 0; i < words.length; i++) {
-    if ((i = " ")) {
-      abbreviation += i[i + 1];
-    }
-  }
-  return abbreviation.toUpperCase();
-}
+//   for (let i = 0; i < words.length; i++) {
+//     if ((i = " ")) {
+//       abbreviation += i;
+//     }
+//   }
+//   return abbreviation.toUpperCase();
+// }
 
-console.log(makeAbbr("national aeronautics space administration"));
+// console.log(makeAbbr("national aeronautics space administration"));
